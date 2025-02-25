@@ -4,7 +4,7 @@ require 'config.php';
 
 // Requête SQL pour récupérer les produits
 $query = 'SELECT * FROM produits';
-$stmt = $PDO->prepare($query);
+$stmt = $pdo->prepare($query);
 $stmt->execute();
 
 // Récupérer tous les produits dans un tableau associatif
@@ -26,8 +26,6 @@ $produits = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <thead>
         <tr>
             <th>ID</th>
-                <a href="edit.php?id="<?=$produits[id];?>>Modifier</a>
-                <a href="delete.php?id="<?=$produits[id];?>>Modifier</a>
             <th>Nom</th>
             <th>Prénom</th>
             <th>date de naissance</th>
