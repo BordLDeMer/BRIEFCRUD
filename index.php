@@ -41,6 +41,7 @@ $produits = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <td><?=htmlspecialchars($p['stock'])?></td>
                 <td><a href="edit.php?id=<?= $p['id']; ?>">Modifier</a></td>
                 <td><a href="delete.php?id=<?= $p['id']; ?>">Supprimer</a></td>
+                <td><a href="add.php?id=<?= $p['id']; ?>">Ajouter</a></td>
             </tr>
         <?php endforeach; ?>
         </tbody>
