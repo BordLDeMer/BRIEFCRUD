@@ -1,0 +1,63 @@
+/* Style général du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère autour du tableau */
+}
+
+/* Style des en-têtes */
+th, label {
+    background-color: #3498db; /* Bleu principal */
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #2980b9; /* Bordure plus foncée pour l'en-tête */
+}
+
+/* Style des cellules du corps du tableau */
+td {
+    background-color: #ecf6fd; /* Bleu très clair pour le fond des cellules */
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd; /* Bordure légère pour séparer les lignes */
+    font-size: 14px;
+    color: #333; /* Texte sombre pour une meilleure lisibilité */
+}
+
+/* Survol de ligne */
+tr:hover {
+    background-color: #d1e7fd; /* Légère couleur bleue au survol */
+}
+
+/* Alternance des couleurs de lignes (lignes paires) */
+tr:nth-child(even) {
+    background-color: #f6f9fc; /* Fond plus clair pour les lignes paires */
+}
+
+/* Bordure du tableau */
+table, {
+    border: 1px solid #ddd; /* Bordure fine autour du tableau */
+    border-radius: 8px; /* Coins arrondis pour un look moderne */
+    overflow: hidden; /* Cache les bords de l'ombre et des arrondis */
+}
+
+/* Style des cellules dans les lignes */
+td, th {
+    text-align: left;
+    padding: 12px;
+}
+
+/* Option de responsive (tableau qui se réduit sur petits écrans) */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
